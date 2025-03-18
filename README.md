@@ -14,6 +14,10 @@
 - **Inventory Domain** 🏬
 - **Notification Domain** 📢
 
+### 🖼️ **System Architecture Diagram**
+![MDD Microservices Architecture](./system-architecture.png)
+
+
 ---
 
 ## 🔀 API Gateway Flow Diagram
