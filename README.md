@@ -15,7 +15,7 @@
 - **Notification Domain** 📢
 
 ### 🖼️ **System Architecture Diagram**
-![MDD Microservices Architecture](./system-architecture.png)
+![MDD Microservices Architecture](./system-architecture-work-flow.png)
 
 
 ---
