@@ -78,4 +78,23 @@
 ## 🔔 Notification Domain
 
 🔹 แบ่งออกเป็น **2 Services**  
--
+- **Notification with Email Service**  
+  - รับ Event จาก **Kafka Broker (Choreography)**  
+  - ค้นหาอีเมลผู้รับจาก **Receiver Email Database**  
+  - ส่งอีเมลแจ้งเตือนเกี่ยวกับคำสั่งซื้อ  
+
+- **Receiver Email Database**  
+  - เก็บข้อมูลอีเมลของผู้รับแจ้งเตือน  
+  - ใช้สำหรับค้นหาผู้รับที่ต้องได้รับแจ้งเตือน  
+
+---
+
+## 📌 Technologies Used
+| Service | Technology Stack |
+|---------|----------------|
+| **API Gateway** | Express, TypeScript |
+| **Order Service** | Go, Kafka, PostgreSQL |
+| **Inventory Service** | Go, Kafka, PostgreSQL |
+| **Notification Service** | Node.js, Kafka, SMTP |
+
+---
