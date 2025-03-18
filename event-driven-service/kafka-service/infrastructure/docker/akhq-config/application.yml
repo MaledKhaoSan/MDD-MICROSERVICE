@@ -1,0 +1,5 @@
+# # infrastructure/docker/akhq-config/application.yml
+# connections:
+#   md-project-kafka-cluster:
+#     properties:
+#       bootstrap.servers: "kafka:9092"

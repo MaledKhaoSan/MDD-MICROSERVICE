@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Order Notification</title>
+</head>
+<body>
+	<h2>Hello {{ .StoreName }}!</h2>
+	<p>You have received a new order with details:</p>
+	<ul>
+		<li><strong>Order ID:</strong> {{ .OrderID }}</li>
+		<li>Order Price: ${{ .OrderPrice }}</li>
+		<li>Quantity: {{ .OrderQuantity }}</li>
+	</ul>
+	<p>Thank you for using our platform!</p>
+</body>
+</html>
