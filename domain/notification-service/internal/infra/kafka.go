@@ -15,7 +15,7 @@ type EventHandler func(*gorm.DB, []byte) error
 func StartKafkaConsumer(db *gorm.DB) { // Added db parameter
 	config := &kafka.ConfigMap{
 		"bootstrap.servers": "localhost:9093",
-		"group.id":          "order-subscribe-service-group",
+		"group.id":          "notification-subscribe-service-group",
 		"auto.offset.reset": "earliest",
 	}
 

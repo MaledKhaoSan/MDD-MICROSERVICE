@@ -18,10 +18,13 @@ type Orders struct {
 	UpdatedAt     time.Time `json:"updated_at" gorm:"type:timestamp;default:CURRENT_TIMESTAMP"`
 }
 
-
 type Store_Information struct {
-    StoreID   string    `gorm:"primaryKey;column:store_id"`
-    StoreName string    `gorm:"column:store_name"`
-    StoreEmail string   `gorm:"column:store_email"`
-    UpdatedAt time.Time `gorm:"column:updated_at"`
+	StoreID    string    `gorm:"primaryKey;column:store_id"`
+	StoreName  string    `gorm:"column:store_name"`
+	StoreEmail string    `gorm:"column:store_email"`
+	UpdatedAt  time.Time `gorm:"column:updated_at"`
+}
+
+func (Store_Information) TableName() string {
+	return "store_information"
 }
